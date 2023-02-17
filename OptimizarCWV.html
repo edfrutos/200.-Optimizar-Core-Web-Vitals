@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizar Core Web Vitals</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Optimizar Core Web Vitals</h1>
+    </header>
+  <main>
+    <p class="encabezado">Las Core Web Vitals son medidas de rendimiento clave para la experiencia del usuario en la
+        web.
+        Estas incluyen la velocidad de carga de la página, la estabilidad del layout y la interacción con la página.
+        Para optimizar las Core Web Vitals, se pueden seguir estos pasos:</p>
+    <ol>
+        <li>
+            <p>Minimizar el tamaño del archivo: Reducir el tamaño de los archivos de imagen y css/javascript mediante
+                herramientas de compresión.</p>
+        </li>
+        <li>
+            <p>Utilizar la caché del navegador: Almacenar en caché los archivos estáticos para reducir la carga de red
+                en sucesivas visitas al sitio.</p>
+        </li>
+        <li>
+            <p>Utilizar un CDN: Utilizar un Content Delivery Network (CDN) para reducir la latencia y aumentar la
+                velocidad de carga de la página.</p>
+        </li>
+        <li>
+            <p>Utilizar el protocolo HTTP/2: Utilizar el protocolo HTTP/2 para mejorar la eficiencia en la transferencia
+                de datos.</p>
+        </li>
+        <li>
+            <p>Utilizar la priorización de contenido: Cargar primero los elementos esenciales de la página y luego los
+                elementos secundarios.</p>
+        </li>
+        <li>
+            <p>Utilizar las herramientas de análisis de rendimiento: Utilizar herramientas como Google PageSpeed
+                Insights, Lighthouse o WebPageTest para medir y analizar el rendimiento de la página.</p>
+        </li>
+        <li>
+            <p>Utilizar técnicas de lazy loading: Cargar elementos solo cuando son necesarios para mejorar la velocidad
+                de carga.</p>
+        </li>
+        <li>
+            <p>Utilizar una estrategia de optimización de imágenes: Utilizar una estrategia de optimización de imágenes
+                para reducir el tamaño de las imágenes y mejorar la velocidad de carga.</p>
+        </li>
+        <br>
+    </ol>
+    <p class="encabezado">1.- Para minimizar el tamaño de los archivos de imagen y css/javascript se
+        pueden utilizar las siguientes herramientas de compresión:</p>
+
+    <ol>
+        <li>
+            <p>Compresión de imágenes: Herramientas como TinyPNG, Compressor.io, Kraken.io, etc. que pueden reducir
+                significativamente el tamaño de las imágenes sin afectar su calidad.</p>
+
+            <p>Algunas herramientas populares de compresión de imágenes son:</p>
+            <ul>
+                <li>
+                    <p>TinyPNG: Una herramienta en línea que permite subir imágenes y reducir su tamaño sin afectar la
+                        calidad.</p>
+                </li>
+                <li>
+                    <p>Compressor.io: Una herramienta en línea similar a TinyPNG que permite subir imágenes y reducir su
+                        tamaño.</p>
+                </li>
+                <li>
+                    <p>Kraken.io: Una herramienta en línea y de escritorio que permite subir imágenes y reducir su
+                        tamaño.</p>
+                </li>
+                <li>
+                    <p>ImageOptim: Una herramienta de escritorio para Mac que permite optimizar imágenes de varios
+                        formatos.</p>
+                </li>
+                <li>
+                    <p>OptiPNG: Una herramienta de línea de comando para Linux y Windows que permite optimizar imágenes
+                        PNG.</p>
+                </li>
+                <li>
+                    <p>JPEGmini: Una herramienta de escritorio y en línea para Mac y Windows que permite optimizar
+                        imágenes JPEG sin afectar la calidad.</p>
+                </li>
+                <li>
+                    <p>RIOT: Una herramienta de escritorio para Windows y Linux que permite optimizar imágenes de varios
+                        formatos.</p>
+                </li>
+                <li>
+                    <p>Squoosh: Es una herramienta de optimización de imágenes desarrollada por Google, es una
+                        aplicación web que te permite optimizar tus imágenes y comparar diferentes formatos y técnicas
+                        de compresión.</p>
+                </li>
+                Es importante tener en cuenta que, para obtener los mejores resultados, es posible que deba probar
+                varias herramientas y comparar los resultados antes de elegir la herramienta adecuada para su proyecto.
+            </ul>
+            <p>Existen varios plugins de WordPress para comprimir imágenes, algunos de los más populares son:</p>
+            <ul>
+                <li>
+                    <p>WP Smush: Este plugin es gratuito y automáticamente optimiza las imágenes cargadas en el sitio.
+                    </p>
+                </li>
+                <li>
+                    <p>EWWW Image Optimizer: Este plugin es gratuito y optimiza las imágenes de varios formatos,
+                        incluyendo JPG, PNG y GIF.</p>
+                </li>
+                <li>
+                    <p>ShortPixel Image Optimizer: Este plugin es gratuito y automáticamente optimiza las imágenes
+                        cargadas en el sitio. Además, ofrece una versión de pago con funciones adicionales.</p>
+                </li>
+                <li>
+                    <p>Kraken.io Image Optimizer: Este plugin es gratuito y optimiza las imágenes cargadas en el sitio
+                        utilizando la herramienta Kraken.io.</p>
+                </li>
+                <li>
+                    <p>Compress JPEG &amp; PNG images: Este plugin es gratuito y optimiza las imágenes cargadas en el
+                        sitio utilizando la herramienta TinyPNG.</p>
+                </li>
+                <li>
+                    <p>Imagify: Este plugin es gratuito y optimiza las imágenes cargadas en el sitio. Ofrece una versión
+                        de pago con funciones adicionales.</p>
+                </li>
+                <li>
+                    <p>Lazy Load by WP Rocket: Este plugin gratuito ayuda a reducir el tamaño de las imágenes cargando
+                        solo las imágenes que se muestran en la pantalla y no todas las imágenes de una sola vez.</p>
+                </li>
+                <li>
+                    <p>Optimize Images: Este plugin es gratuito y optimiza las imágenes cargadas en el sitio.</p>
+                </li>
+            </ul>
+            <p>Hay que elegir el plugin adecuado para tu sitio, ya que algunos plugins pueden afectar al rendimiento del
+                sitio o causar problemas de compatibilidad. Es recomendable probar varios plugins y comparar los
+                resultados antes de elegir el plugin adecuado para su sitio.</p>
+        </li>
+        <li>
+            <p>Minimización de CSS y JavaScript: Herramientas como CSSNano, UglifyJS, etc. que pueden minimizar el
+                tamaño de los archivos CSS y JavaScript mediante la eliminación de comentarios, espacios en blanco y
+                otras mejoras en el código.</p>
+            <p>Existen varias herramientas que pueden ayudar a reducir el tamaño de los archivos CSS y JavaScript
+                mediante la compresión:</p>
+            <ul>
+                <li>
+                    <p>Minifier: Es una herramienta en línea que permite comprimir archivos CSS y JavaScript ingresando
+                        el código o subiendo el archivo.</p>
+                </li>
+                <li>
+                    <p>Closure Compiler: Es una herramienta en línea desarrollada por Google que permite comprimir
+                        archivos JavaScript utilizando el algoritmo de optimización de código Closure.</p>
+                </li>
+                <li>
+                    <p>YUI Compressor: Es una herramienta de línea de comando desarrollada por Yahoo que permite
+                        comprimir archivos CSS y JavaScript.</p>
+                </li>
+                <li>
+                    <p>UglifyJS: Es una herramienta de línea de comando para JavaScript que permite minificar y combinar
+                        archivos.</p>
+                </li>
+                <li>
+                    <p>CSSNano: Es una herramienta de línea de comando para CSS que permite minificar y optimizar
+                        archivos CSS.</p>
+                </li>
+                <li>
+                    <p>Grunt: Es una herramienta de automatización de tareas que permite minificar y combinar archivos
+                        CSS y JavaScript.</p>
+                </li>
+                <li>
+                    <p>Webpack: Es una herramienta de empaquetado de módulos que permite minificar y combinar archivos
+                        CSS y JavaScript.</p>
+                </li>
+                <li>
+                    <p>Gulp: Es una herramienta de automatización de tareas similar a Grunt que permite minificar y
+                        combinar archivos CSS y JavaScript.</p>
+                </li>
+            </ul>
+            <p>
+                Algunas de estas herramientas pueden requerir un cierto nivel de conocimiento técnico para configurar y
+                utilizar. Es recomendable probar varias herramientas y comparar los resultados antes de elegir la
+                herramienta adecuada para su proyecto.
+            </p>
+        </li>
+        <p>Existen varios plugins de WordPress que pueden ayudar a reducir el tamaño de los archivos CSS y JavaScript
+            mediante la compresión:</p>
+        <ul>
+            <li>
+                <p>Autoptimize: Este plugin es gratuito y optimiza automáticamente los archivos CSS y JavaScript del
+                    sitio, incluyendo la compresión y la combinación de archivos.</p>
+            </li>
+            <li>
+                <p>WP Minify: Este plugin es gratuito y permite comprimir y combinar los archivos CSS y JavaScript del
+                    sitio para mejorar el rendimiento.</p>
+            </li>
+            <li>
+                <p>Fast Velocity Minify: Este plugin es gratuito y permite comprimir y combinar los archivos CSS y
+                    JavaScript del sitio, así como también optimizar las imágenes.</p>
+            </li>
+            <li>
+                <p>WP Super Minify: Este plugin es gratuito y permite comprimir y combinar los archivos CSS y JavaScript
+                    del sitio.</p>
+            </li>
+            <li>
+                <p>W3 Total Cache: Este plugin es gratuito y ofrece una variedad de opciones de rendimiento, incluyendo
+                    la compresión y combinación de archivos CSS y JavaScript.</p>
+            </li>
+        </ul>
+        <p>Es importante tener en cuenta que algunos de estos plugins pueden requerir un cierto nivel de conocimiento
+            técnico para configurar y utilizar. Es recomendable probar varios plugins y comparar los resultados antes de
+            elegir el plugin adecuado para su proyecto.</p>
+        <li>
+            <p>Compresión GZIP: Utilizar compresión GZIP en el servidor para reducir el tamaño de los archivos de
+                imagen, CSS y JavaScript antes de ser enviados al navegador.</p>
+        </li>
+        <li>
+            <p>Utilizar imagen vectoriales: Utilizar formato SVG en vez de imágenes raster para mejorar la calidad y
+                reducir el tamaño de las imágenes.</p>
+        </li>
+        <li>
+            <p>Utilizar WebP: Utilizar el formato de imagen WebP, que es similar al formato JPEG y PNG pero con un
+                tamaño de archivo menor.</p>
+        </li>
+    </ol>
+    <p class="encabezado">2.- Utilizar la caché del navegador: Almacenar en caché los archivos estáticos para reducir la
+        carga de red en sucesivas visitas al sitio.</p>
+
+    <ol>
+        <p>La caché del navegador es un mecanismo utilizado para almacenar en la memoria del navegador los recursos
+            descargados de un sitio web, como imágenes, archivos CSS y JavaScript, para que no tenga que descargarlos
+            nuevamente en futuras visitas. Esto puede mejorar significativamente el rendimiento de un sitio web, ya que
+            reduce la cantidad de datos que el navegador tiene que descargar.
+            Hay varias maneras de utilizar la caché del navegador:</p>
+        <li>
+            <p>Establecer encabezados HTTP: Establecer los encabezados HTTP adecuados en el servidor permite que el
+                navegador sepa cuándo deben almacenarse en caché los recursos y cuándo deben actualizarse.</p>
+            <ul>
+                <p>Sí, establecer encabezados HTTP es una forma importante de mejorar el rendimiento de un sitio web.
+                    Los encabezados HTTP son mensajes que se envían entre el navegador y el servidor para indicar cómo
+                    deben manejarse las solicitudes y las respuestas. Algunos de los encabezados HTTP más importantes
+                    para mejorar el rendimiento incluyen:</p>
+                <li>
+                    <p>Cache-Control: Este encabezado indica al navegador cómo deben manejarse las solicitudes de caché.
+                        Por ejemplo, se puede utilizar para indicar que un recurso no debe almacenarse en caché o que
+                        debe almacenarse por un período de tiempo específico.</p>
+                </li>
+                <li>
+                    <p>Expires: Este encabezado indica la fecha y hora en que un recurso debe considerarse obsoleto y no
+                        debe utilizarse la caché.</p>
+                </li>
+                <li>
+                    <p>ETag: Este encabezado es un valor único que se utiliza para determinar si un recurso ha cambiado
+                        desde la última vez que se solicitó.</p>
+                </li>
+                <li>
+                    <p>Last-Modified: Este encabezado indica la fecha y hora en que un recurso fue modificado por última
+                        vez.</p>
+                </li>
+                <li>
+                    <p>Content-Encoding: Este encabezado indica si un recurso se ha codificado de alguna manera, como
+                        GZIP.</p>
+                </li>
+                <li>
+                    <p>Content-Type: Este encabezado indica el tipo de contenido que se está devolviendo, como HTML, CSS
+                        o JavaScript.</p>
+                </li>
+                <li>
+                    <p>Server Push: Este encabezado permite al servidor enviar recursos adicionales al navegador en
+                        lugar de esperar a que el navegador los solicite.</p>
+                </li>
+                <p>Al establecer encabezados HTTP adecuados, se pueden mejorar la velocidad de carga y la eficiencia del
+                    sitio web. Sin embargo, es importante asegurarse de que los encabezados se establecen correctamente
+                    ya que una configuración incorrecta puede causar problemas de rendimiento.</p>
+            </ul>
+        </li>
+        <li>
+            <p>Utilizar un plugin de caché: Hay varios plugins de WordPress que ofrecen la opción de habilitar la caché
+                del navegador.</p>
+            <ul>
+                <li>
+                    <p>WP Super Cache: Este plugin es gratuito y genera archivos HTML estáticos para las páginas de su
+                        sitio, lo que permite que el navegador las almacene en caché.</p>
+                </li>
+                <li>
+                    <p>W3 Total Cache: Este plugin es gratuito y ofrece una variedad de opciones de rendimiento,
+                        incluyendo la caché de páginas, objetos y consultas de la base de datos.</p>
+                </li>
+                <li>
+                    <p>WP Fastest Cache: Este plugin es gratuito y ofrece opciones para habilitar la caché de páginas y
+                        objetos, así como también optimizar imágenes.</p>
+                </li>
+                <li>
+                    <p>Cache Enabler: Este plugin es gratuito y permite generar archivos HTML estáticos para las páginas
+                        de su sitio, lo que permite que el navegador las almacene en caché.</p>
+                </li>
+                <li>
+                    <p>WP Rocket: Este plugin es de pago y ofrece una variedad de opciones de rendimiento, incluyendo la
+                        caché de páginas, objetos y consultas de la base de datos.</p>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>Utilizar un servicio de caché en la nube: Algunos servicios de caché en la nube, como Cloudflare, ofrecen
+                la opción de habilitar la caché del navegador.</p>
+            <ul>
+                <li>
+                    <p>Cloudflare: Ofrece una variedad de características de rendimiento, incluyendo la caché de
+                        recursos y la optimización de imágenes.</p>
+                </li>
+                <li>
+                    <p>Akamai: Ofrece una variedad de características de rendimiento, incluyendo la caché de recursos,
+                        la optimización de imágenes y la aceleración de contenido dinámico.</p>
+                </li>
+                <li>
+                    <p>Amazon CloudFront: Es un servicio de Amazon Web Services que se utiliza para distribuir contenido
+                        estático y dinámico a través de una red global de servidores de entrega de contenido (CDN).</p>
+                </li>
+                <li>
+                    <p>MaxCDN: Ofrece una variedad de características de rendimiento, incluyendo la caché de recursos y
+                        la optimización de imágenes.</p>
+                </li>
+                <li>
+                    <p>Incapsula: Ofrece una variedad de características de rendimiento, incluyendo la caché de
+                        recursos, la optimización de imágenes y la protección DDoS.</p>
+                </li>
+            </ul>
+        </li>
+
+    </ol>
+    <p class="encabezado">3.- Utilizar un CDN: Utilizar un Content Delivery Network (CDN) para reducir la latencia y
+        aumentar la velocidad de carga de la página.</p>
+    <p class="encabezado">4.- Utilizar el protocolo HTTP/2: Utilizar el protocolo HTTP/2 para mejorar la eficiencia en
+        la transferencia de datos.</p>
+        <p class="encabezado">5.- Utilizar la priorización de contenido: Cargar primero los elementos esenciales de la página y luego los elementos secundarios.</p>
+        <p class="encabezado">6.- Utilizar las herramientas de análisis de rendimiento: Utilizar herramientas como Google PageSpeed Insights, Lighthouse o WebPageTest para medir y analizar el rendimiento de la página.</p>
+        <p class="encabezado">7.- Utilizar técnicas de lazy loading: Cargar elementos solo cuando son necesarios para mejorar la velocidad de carga.</p>
+        <p class="encabezado">8.- Utilizar una estrategia de optimización de imágenes: Utilizar una estrategia de optimización de imágenes para reducir el tamaño de las imágenes y mejorar la velocidad de carga.</p>
+    
+  </main>
+    </body>
+<script src="./main.js"></script>
+
+</html>

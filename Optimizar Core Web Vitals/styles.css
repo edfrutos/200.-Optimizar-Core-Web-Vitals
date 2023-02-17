@@ -1,0 +1,68 @@
+
+body {
+    width: 100%; /* establecer un ancho de 1200px */
+    height: auto; /* establecer un alto de 800px */
+    margin-left: 30vw; /* eliminar los márgenes predeterminados */
+    margin-top: 5vh;
+}
+
+li, p{
+    text-align: justify;
+    /*justificar el texto*/
+    hyphens: auto;
+    /*activar el corte de palabras*/
+    word-wrap: break-word;
+    /*romper las palabras para ajustarlas al ancho*/
+    max-width: 700px;
+    /*definir un ancho máximo para cada línea*/
+}
+h1 {
+    font-size: 3em;
+}
+
+    header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: aqua;
+      padding: 20px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    main {
+        margin-left: 75px;
+        padding: 1em;
+        }
+        
+        section {
+        margin-bottom: 2em;
+        }
+    footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+.encabezado {
+    font-family: Arial, sans-serif; /*establecer el tipo de fuente*/
+    font-size: 1.5em; /*establecer el tamaño de la fuente*/
+    font-weight: bold; /*establecer el estilo negrita*/
+  }
+
+.encabezado2 {
+    font-family: Arial, sans-serif; /*establecer el tipo de fuente*/
+    font-size: 1em; /*establecer el tamaño de la fuente*/
+    font-weight: bold; /*establecer el estilo negrita*/
+}
+
+.encabezado3 {
+    font-family: Arial, sans-serif; /*establecer el tipo de fuente*/
+    font-size: 1em; /*establecer el tamaño de la fuente*/
+    font-weight: bold ; /*establecer el estilo negrita*/
+}
